@@ -7,13 +7,14 @@ License: MIT opensource <br>
 Author: <a href="https://prashantdey.in">Prashant Kumar Dey </a> <br>
 Version: 0.1 <br>
 Panel Used: <a href="https://sendgrid.com">Sendgrid</a> <br>
+HTML Template: Template was generated through <a href="https://beefree.io/">BeeFree</a> <br>
 
 ## Requirements
-<li> python3 <br></li>
+1. python3 <br>
 ```
 sudo apt-get install python3
 ```
-<li> python3-pip <br></li>
+2. python3-pip <br>
 ```
 sudo apt-get install python3-pip
 ```
@@ -45,7 +46,6 @@ Install sendgrid python dependency.
 
 ```
 pip3 install sendgrid
-
 ```
 Open `emailer.py` file and replace `SENDGRID_API_CREDENTIALS` with the `API_KEY` that you have obtained from the above step.<br>
 
