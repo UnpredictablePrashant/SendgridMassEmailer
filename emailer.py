@@ -20,6 +20,7 @@ if database_exists_flag == True:
 
         #name of the report file is the date and time of sending email
         fileName = str(datetime.now())+".csv"
+        subject_email = str(input("Subject of the email: "))
 
 
         #Location of the template goes here and it should be html files. The images should fetch from the live server
@@ -34,7 +35,7 @@ if database_exists_flag == True:
                 message = Mail(
                     from_email='test@test.com',  #From email is mentioned, it should be configured from the sendgrid admin panel
                     to_emails=email_db,
-                    subject='Sending First File',
+                    subject=subject_email,
                     html_content=html_string)
                 try:
                     sg = SendGridAPIClient(os.environ.get('SENDGRID_API_CREDENTIALS')) #API id is created from the sendgrid admin panel
